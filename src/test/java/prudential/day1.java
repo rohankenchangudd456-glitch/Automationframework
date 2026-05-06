@@ -22,6 +22,7 @@ public class day1 {
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.navigate().refresh();
 		
 		WebDriverWait mywait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		System.out.println(driver.getTitle());
